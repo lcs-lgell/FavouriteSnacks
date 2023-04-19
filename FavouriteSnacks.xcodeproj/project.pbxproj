@@ -15,6 +15,7 @@
 		EE856F7629F03A7700A0DD4C /* FavouriteSnacks.db in Resources */ = {isa = PBXBuildFile; fileRef = EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */; };
 		EE856F7829F0689000A0DD4C /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7729F0689000A0DD4C /* Favourite.swift */; };
 		EE856F7B29F0AC4900A0DD4C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7A29F0AC4900A0DD4C /* AppDatabase.swift */; };
+		EE856F7D29F0ACAE00A0DD4C /* FavouriteSnacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7C29F0ACAE00A0DD4C /* FavouriteSnacksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = FavouriteSnacks.db; path = FavouriteSnacks/FavouriteSnacks.db; sourceTree = SOURCE_ROOT; };
 		EE856F7729F0689000A0DD4C /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		EE856F7A29F0AC4900A0DD4C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		EE856F7C29F0ACAE00A0DD4C /* FavouriteSnacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteSnacksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				EE856F7029F030AD00A0DD4C /* FavouriteView.swift */,
+				EE856F7C29F0ACAE00A0DD4C /* FavouriteSnacksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE856F7829F0689000A0DD4C /* Favourite.swift in Sources */,
+				EE856F7D29F0ACAE00A0DD4C /* FavouriteSnacksView.swift in Sources */,
 				EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */,
 				EE856F7B29F0AC4900A0DD4C /* AppDatabase.swift in Sources */,
 				EE856F6129F02F2C00A0DD4C /* FavouriteSnacksApp.swift in Sources */,
