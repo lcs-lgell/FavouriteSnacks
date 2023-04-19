@@ -11,6 +11,7 @@
 		EE856F6529F02F3100A0DD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE856F6429F02F3100A0DD4C /* Assets.xcassets */; };
 		EE856F6829F02F3100A0DD4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */; };
 		EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7029F030AD00A0DD4C /* FavouriteView.swift */; };
+		EE856F7429F0324B00A0DD4C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = EE856F7329F0324B00A0DD4C /* Blackbird */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE856F7429F0324B00A0DD4C /* Blackbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +101,9 @@
 			dependencies = (
 			);
 			name = FavouriteSnacks;
+			packageProductDependencies = (
+				EE856F7329F0324B00A0DD4C /* Blackbird */,
+			);
 			productName = FavouriteSnacks;
 			productReference = EE856F5D29F02F2C00A0DD4C /* FavouriteSnacks.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +132,9 @@
 				Base,
 			);
 			mainGroup = EE856F5429F02F2C00A0DD4C;
+			packageReferences = (
+				EE856F7229F0324B00A0DD4C /* XCRemoteSwiftPackageReference "Blackbird" */,
+			);
 			productRefGroup = EE856F5E29F02F2C00A0DD4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -355,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE856F7229F0324B00A0DD4C /* XCRemoteSwiftPackageReference "Blackbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcoarment/Blackbird";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE856F7329F0324B00A0DD4C /* Blackbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE856F7229F0324B00A0DD4C /* XCRemoteSwiftPackageReference "Blackbird" */;
+			productName = Blackbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE856F5529F02F2C00A0DD4C /* Project object */;
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct FavouriteSnacksApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FavouriteView()
         }
     }
 }
