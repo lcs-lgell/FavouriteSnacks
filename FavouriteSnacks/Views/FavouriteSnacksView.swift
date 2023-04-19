@@ -37,6 +37,17 @@ struct FavouriteSnacksView: View {
             
         }
     }
+    //MARK: Initalizer
+    init(filteredOn searchText: String) {
+        
+        // Initialize
+        _favouriteSnacks = BlackbirdLiveModels({ db in
+            try await Favourite.read(from: db, sqlWhere: "description LIKE ?", "%\(searchText)%")
+        })
+        
+        
+    }
+    
 }
 
 struct FavouriteSnacksView_Previews: PreviewProvider {
