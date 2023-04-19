@@ -13,6 +13,7 @@
 		EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7029F030AD00A0DD4C /* FavouriteView.swift */; };
 		EE856F7429F0324B00A0DD4C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = EE856F7329F0324B00A0DD4C /* Blackbird */; };
 		EE856F7629F03A7700A0DD4C /* FavouriteSnacks.db in Resources */ = {isa = PBXBuildFile; fileRef = EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */; };
+		EE856F7829F0689000A0DD4C /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7729F0689000A0DD4C /* Favourite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE856F7029F030AD00A0DD4C /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = FavouriteSnacks.db; path = FavouriteSnacks/FavouriteSnacks.db; sourceTree = SOURCE_ROOT; };
+		EE856F7729F0689000A0DD4C /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */,
+				EE856F7729F0689000A0DD4C /* Favourite.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE856F7829F0689000A0DD4C /* Favourite.swift in Sources */,
 				EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */,
 				EE856F6129F02F2C00A0DD4C /* FavouriteSnacksApp.swift in Sources */,
 			);
