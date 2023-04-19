@@ -14,7 +14,14 @@ struct FavouriteView: View {
     
     //MARK: Computed Properties
     var body: some View {
-        
+        NavigationView {
+            
+            VStack {
+                
+                
+            }
+            .navigationTitle("Favourite Snacks")
+        }
     }
 }
 
