@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EE856F6129F02F2C00A0DD4C /* FavouriteSnacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F6029F02F2C00A0DD4C /* FavouriteSnacksApp.swift */; };
-		EE856F6329F02F2C00A0DD4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F6229F02F2C00A0DD4C /* ContentView.swift */; };
 		EE856F6529F02F3100A0DD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE856F6429F02F3100A0DD4C /* Assets.xcassets */; };
 		EE856F6829F02F3100A0DD4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */; };
+		EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7029F030AD00A0DD4C /* FavouriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE856F5D29F02F2C00A0DD4C /* FavouriteSnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteSnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE856F6029F02F2C00A0DD4C /* FavouriteSnacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteSnacksApp.swift; sourceTree = "<group>"; };
-		EE856F6229F02F2C00A0DD4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE856F6429F02F3100A0DD4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE856F7029F030AD00A0DD4C /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				EE856F6029F02F2C00A0DD4C /* FavouriteSnacksApp.swift */,
-				EE856F6229F02F2C00A0DD4C /* ContentView.swift */,
+				EE856F6F29F0303600A0DD4C /* Model */,
+				EE856F6E29F0302D00A0DD4C /* Views */,
 				EE856F6429F02F3100A0DD4C /* Assets.xcassets */,
 				EE856F6629F02F3100A0DD4C /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE856F6E29F0302D00A0DD4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE856F7029F030AD00A0DD4C /* FavouriteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE856F6F29F0303600A0DD4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE856F6329F02F2C00A0DD4C /* ContentView.swift in Sources */,
+				EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */,
 				EE856F6129F02F2C00A0DD4C /* FavouriteSnacksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
