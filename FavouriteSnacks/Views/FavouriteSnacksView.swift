@@ -59,6 +59,7 @@ struct FavouriteSnacksView: View {
                     idList += "\(favouriteSnacks.results[offset].id),"
                 }
                 
+                // remove the final comma
                 print(idList)
                 idList.removeLast()
                 print(idList)
@@ -67,12 +68,11 @@ struct FavouriteSnacksView: View {
                 try core.query("DELETE FROM Favourite WHERE id IN (?)", idList)
                 print("Finished deleting")
                 
-                
-                
             }
             
+            
         }
-        
+
         
     }
 }
