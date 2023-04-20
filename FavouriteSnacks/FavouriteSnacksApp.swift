@@ -12,7 +12,18 @@ import SwiftUI
 struct FavouriteSnacksApp: App {
     var body: some Scene {
         WindowGroup {
-            FavouriteView()
+            TabView {
+                
+                FavouriteView()
+                    .tabItem {
+                        Label("What Snack", systemImage: "fork.knife")
+                    }
+//                BestView()
+//                    .tabItem {
+//                        Label("Best Snack", systemImage: "1.circle")
+//                    }
+            }
+            
                 .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }

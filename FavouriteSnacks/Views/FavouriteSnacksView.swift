@@ -23,18 +23,17 @@ struct FavouriteSnacksView: View {
             
             ForEach(favouriteSnacks.results) { currentItem in
                 
-                Label(title: {
+                HStack {
+                    
                     Text(currentItem.item)
                         .textCase(.uppercase)
                     Text(currentItem.price)
                         .textCase(.uppercase)
                     Text(currentItem.type)
                         .textCase(.uppercase)
-                }, icon: {
-                   // NO ICON NEEDED
-                })
+                }
             }
-            
+            .onDelete(perform: removeRows)
         }
     }
     //MARK: Initalizer
@@ -65,7 +64,7 @@ struct FavouriteSnacksView: View {
                 print(idList)
                 
                 //Delete the row from the database
-                try core.query("DELETE FROM MoodMapper WHERE id IN (?)", idList)
+                try core.query("DELETE FROM Favourite WHERE id IN (?)", idList)
                 print("Finished deleting")
                 
                 

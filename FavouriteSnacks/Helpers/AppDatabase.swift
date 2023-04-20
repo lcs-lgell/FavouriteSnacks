@@ -22,7 +22,7 @@ struct AppDatabase {
             // We need the path to the database file
             let dbPath = try fileManager
                 .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-                .appendingPathComponent("db.sqlite")
+                .appendingPathComponent("db1.sqlite")
                 .path
             print("Database may exist already at this location:")
             print(dbPath)
@@ -39,7 +39,7 @@ struct AppDatabase {
             if !fileManager.fileExists(atPath: dbPath) {
 
                 print("Database does not already exist. Instead, we are going to attempt to copy from the bundle resource path of:")
-                let dbResourcePath = Bundle.main.path(forResource: "db", ofType: "sqlite")!
+                let dbResourcePath = Bundle.main.path(forResource: "db1", ofType: "sqlite")!
                 print(dbResourcePath)
 
                 try fileManager.copyItem(atPath: dbResourcePath, toPath: dbPath)

@@ -20,6 +20,11 @@ struct FavouriteView: View {
     
     @State var newType: String = ""
     
+    // the list of favourite snacks
+    @BlackbirdLiveModels({ db in
+        try await Favourite.read(from: db)
+    }) var bestSnacks
+    
     //MARK: Computed Properties
     var body: some View {
         NavigationView {
@@ -38,7 +43,7 @@ struct FavouriteView: View {
                         
                         Task {
                             try await db!.transaction { core in
-                                try core.query("INSERT INTO FavouriteSnacks (item, price, type) VALUES (?,?,?)", newItem, newPrice, newType)
+                                try core.query("INSERT INTO Favourite (item, price, type) VALUES (?, ?, ?)", newItem, newPrice, newType)
                             }
                             newItem = ""
                             newPrice = ""
@@ -47,13 +52,19 @@ struct FavouriteView: View {
                     }, label: {
                         Text("ADD")
                     })
-                    
-                    
-                    
-                    
-                    
+                    .padding(20)
                 }
-                .padding(10)
+                List(bestSnacks.results) { currentItem in
+                    VStack(alignment: .leading) {
+                        Text(currentItem.item)
+                            .textCase(.uppercase)
+                        Text(currentItem.price)
+                            .textCase(.uppercase)
+                        Text(currentItem.type)
+                            .textCase(.uppercase)
+                        }
+                    }
+                
             }
             .navigationTitle("Favourite Snacks")
         }
