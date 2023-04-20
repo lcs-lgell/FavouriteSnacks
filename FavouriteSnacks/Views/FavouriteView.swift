@@ -63,5 +63,7 @@ struct FavouriteView: View {
 struct FavouriteView_Previews: PreviewProvider {
     static var previews: some View {
         FavouriteView()
+        // make the database available to all other views through the enviornment
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
     }
 }

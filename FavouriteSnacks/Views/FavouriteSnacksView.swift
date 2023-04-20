@@ -47,12 +47,40 @@ struct FavouriteSnacksView: View {
         
         
     }
-    
+    //MARK: Functions
+    func removeRows(at offsets: IndexSet) {
+        
+        Task {
+            
+            try await db!.transaction { core in
+                
+                // Get the id of the item to be deleted
+                var idList = ""
+                for offset in offsets {
+                    idList += "\(favouriteSnacks.results[offset].id),"
+                }
+                
+                print(idList)
+                idList.removeLast()
+                print(idList)
+                
+                //Delete the row from the database
+                try core.query("DELETE FROM MoodMapper WHERE id IN (?)", idList)
+                print("Finished deleting")
+                
+                
+                
+            }
+            
+        }
+        
+        
+    }
 }
 
 struct FavouriteSnacksView_Previews: PreviewProvider {
     static var previews: some View {
-        FavouriteSnacksView()
+        FavouriteSnacksView(filteredOn: "")
         // make the database available to all other views through the enviornment
             .environment(\.blackbirdDatabase, AppDatabase.instance)
     }

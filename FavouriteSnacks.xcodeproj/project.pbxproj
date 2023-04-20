@@ -12,7 +12,7 @@
 		EE856F6829F02F3100A0DD4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */; };
 		EE856F7129F030AD00A0DD4C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7029F030AD00A0DD4C /* FavouriteView.swift */; };
 		EE856F7429F0324B00A0DD4C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = EE856F7329F0324B00A0DD4C /* Blackbird */; };
-		EE856F7629F03A7700A0DD4C /* FavouriteSnacks.db in Resources */ = {isa = PBXBuildFile; fileRef = EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */; };
+		EE856F7629F03A7700A0DD4C /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EE856F7529F03A7600A0DD4C /* db.sqlite */; };
 		EE856F7829F0689000A0DD4C /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7729F0689000A0DD4C /* Favourite.swift */; };
 		EE856F7B29F0AC4900A0DD4C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7A29F0AC4900A0DD4C /* AppDatabase.swift */; };
 		EE856F7D29F0ACAE00A0DD4C /* FavouriteSnacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE856F7C29F0ACAE00A0DD4C /* FavouriteSnacksView.swift */; };
@@ -24,7 +24,7 @@
 		EE856F6429F02F3100A0DD4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE856F6729F02F3100A0DD4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE856F7029F030AD00A0DD4C /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
-		EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = FavouriteSnacks.db; path = FavouriteSnacks/FavouriteSnacks.db; sourceTree = SOURCE_ROOT; };
+		EE856F7529F03A7600A0DD4C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = FavouriteSnacks/db.sqlite; sourceTree = SOURCE_ROOT; };
 		EE856F7729F0689000A0DD4C /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		EE856F7A29F0AC4900A0DD4C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		EE856F7C29F0ACAE00A0DD4C /* FavouriteSnacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteSnacksView.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		EE856F6F29F0303600A0DD4C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE856F7529F03A7600A0DD4C /* FavouriteSnacks.db */,
+				EE856F7529F03A7600A0DD4C /* db.sqlite */,
 				EE856F7729F0689000A0DD4C /* Favourite.swift */,
 			);
 			path = Model;
@@ -171,7 +171,7 @@
 			files = (
 				EE856F6829F02F3100A0DD4C /* Preview Assets.xcassets in Resources */,
 				EE856F6529F02F3100A0DD4C /* Assets.xcassets in Resources */,
-				EE856F7629F03A7700A0DD4C /* FavouriteSnacks.db in Resources */,
+				EE856F7629F03A7700A0DD4C /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
