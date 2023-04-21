@@ -34,6 +34,7 @@ struct FavouriteSnacksView: View {
                 }
             }
             .onDelete(perform: removeRows)
+
         }
     }
     //MARK: Initalizer

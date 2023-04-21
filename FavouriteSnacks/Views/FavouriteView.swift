@@ -25,6 +25,9 @@ struct FavouriteView: View {
         try await Favourite.read(from: db)
     }) var bestSnacks
     
+    //The current search text
+    @State var searchText = ""
+    
     //MARK: Computed Properties
     var body: some View {
         NavigationView {
@@ -54,17 +57,9 @@ struct FavouriteView: View {
                     })
                     .padding(20)
                 }
-                List(bestSnacks.results) { currentItem in
-                    VStack(alignment: .leading) {
-                        Text(currentItem.item)
-                            .textCase(.uppercase)
-                        Text(currentItem.price)
-                            .textCase(.uppercase)
-                        Text(currentItem.type)
-                            .textCase(.uppercase)
-                        }
-                    }
                 
+                FavouriteSnacksView(filteredOn: searchText)
+                .searchable(text: $searchText)
             }
             .navigationTitle("Favourite Snacks")
         }

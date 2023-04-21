@@ -18,10 +18,10 @@ struct FavouriteSnacksApp: App {
                     .tabItem {
                         Label("What Snack", systemImage: "fork.knife")
                     }
-//                BestView()
-//                    .tabItem {
-//                        Label("Best Snack", systemImage: "1.circle")
-//                    }
+                BestView()
+                    .tabItem {
+                        Label("Best Snack", systemImage: "1.circle")
+                    }
             }
             
                 .environment(\.blackbirdDatabase, AppDatabase.instance)
