@@ -32,6 +32,13 @@ struct FavouriteSnacksView: View {
                     Text(currentItem.type)
                         .textCase(.uppercase)
                 }
+//                .onTapGesture {
+//                    Task{
+//                        try await db!.transaction { core in
+//                            //Change the status to the opposite
+//                            try core.query("UPDATE Favourite set completed = (?) WHERE id = (?)", !currentItem.item, currentItem.id, currentItem.type, currentItem.price)
+//                            
+//                            
             }
             .onDelete(perform: removeRows)
 
@@ -45,8 +52,7 @@ struct FavouriteSnacksView: View {
             try await Favourite.read(from: db, sqlWhere: "description LIKE ?", "%\(searchText)%")
         })
         
-        
-    }
+ }
     //MARK: Functions
     func removeRows(at offsets: IndexSet) {
         

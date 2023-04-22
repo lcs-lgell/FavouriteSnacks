@@ -57,6 +57,16 @@ struct FavouriteView: View {
                     })
                     .padding(20)
                 }
+                List(bestSnacks.results) { currentItem in
+                    VStack(alignment: .leading) {
+                        Text(currentItem.item)
+                            .textCase(.uppercase)
+                        Text(currentItem.price)
+                            .textCase(.uppercase)
+                        Text(currentItem.type)
+                            .textCase(.uppercase)
+                        }
+                    }
                 
                 FavouriteSnacksView(filteredOn: searchText)
                 .searchable(text: $searchText)
